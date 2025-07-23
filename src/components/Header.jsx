@@ -2,9 +2,11 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
-      <h1 className="text-blue-900 text-center text-bold
-      text-4xl">CodeHelp Blogs</h1>
+    <div className='border shadow-2xl py-2'>
+
+      <header className='text-center'>
+        <h1 className="text-4xl">CodeHelp Blogs</h1>
+      </header>
 
     </div>
   )

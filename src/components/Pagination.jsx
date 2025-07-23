@@ -6,21 +6,21 @@ const Pagination = () => {
 
   
   return (
-    <div className='flex flex-row'>
-      <div>
+    <div className='flex items-center gap-5 justify-center static'>
+      
         { page>1?
-          <button onClick={()=>PageChange(page-1)}>prev</button>:null
+          <button className='border border-red-600 ' onClick={()=>PageChange(page-1)}>prev</button>:null
         }
-      </div>
-      <div>
+      
+      
         {
-          page<totalPages?<button onClick={()=>PageChange(page+1)}>Next</button>:null
+          page<totalPages?<button className='border border-red-600' onClick={()=>PageChange(page+1)}>Next</button>:null
         }
 
         <p>
           Page No - {page} of {totalPages}
         </p>
-      </div>
+      
     </div>
   )
 }
